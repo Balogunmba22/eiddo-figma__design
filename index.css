@@ -1095,12 +1095,6 @@ footer input::placeholder {
     width: 100%;
   }
 
-  .card p,
-  .blog-post__card .date,
-  .our-agents-card p {
-    font-size: 1.25rem;
-  }
-
   .property-cards,
   .blog-post__container,
   .by-area__container,
