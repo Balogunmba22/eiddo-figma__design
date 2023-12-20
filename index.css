@@ -1089,11 +1089,17 @@ footer input::placeholder {
     padding: 0 1rem;
   }
 
-  /* .card,
+  .card,
   .blog-post__card,
   .our-agents-card {
     width: 100%;
-  } */
+  }
+
+  .card p,
+  .blog-post__card .date,
+  .our-agents-card p {
+    font-size: 1.25rem;
+  }
 
   .property-cards,
   .blog-post__container,
