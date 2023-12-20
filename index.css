@@ -29,21 +29,20 @@ h2 {
   font-size: 3rem;
 }
 
-header,
 section {
   margin: 0 8rem;
 }
 
 /* Header */
 header {
-  padding: 2.25rem 0;
+  padding: 2.25rem 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: sticky;
+  position: sticky;
   top: 0;
   z-index: 1;
-  background-color: white; */
+  background-color: white;
 }
 
 img.logo {
@@ -117,15 +116,6 @@ section.hero {
   padding: 0.375rem 1.5rem;
   color: white;
   cursor: pointer;
-}
-
-.rent:hover,
-.buy:hover,
-.sold:hover {
-  background-color: white;
-  color: #318990;
-  font-weight: 600;
-  border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
 .search-container {
@@ -1020,8 +1010,12 @@ footer input::placeholder {
     font-size: 12px;
   }
 
-  section,
   header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  section {
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -1091,15 +1085,18 @@ footer input::placeholder {
     display: none;
   }
 
-  .property-cards,
-  .blog-post__container {
-    flex-direction: column;
-  }
-
   section.by-area {
     padding: 0 1rem;
   }
 
+  .card,
+  .blog-post__card,
+  .our-agents-card {
+    width: 100%;
+  }
+
+  .property-cards,
+  .blog-post__container,
   .by-area__container,
   .comfort-box__container,
   .our-agents__card-container,
@@ -1110,12 +1107,12 @@ footer input::placeholder {
   }
 
   .by-area-bkg {
-    min-width: 22rem;
+    min-width: 100%;
   }
 
   .by-area__container.first span.first-bkg,
   .by-area__container.second span.third-bkg {
-    max-width: 22rem;
+    max-width: 100%;
   }
 
   .mobile-property {
@@ -1136,7 +1133,7 @@ footer input::placeholder {
   }
 
   .platform-bkg__img {
-    width: 24.5rem;
+    width: 100%;
   }
 
   .platform-text__wrapper {
@@ -1178,7 +1175,7 @@ footer input::placeholder {
     margin-top: 1rem;
   }
 
-  .dots {
+  .dots-wrapper {
     margin-top: 2rem;
     display: flex;
     gap: 1.5rem;
@@ -1200,7 +1197,7 @@ footer input::placeholder {
   }
 
   /* Fading animation */
-  /* .fade {
+  .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
@@ -1212,11 +1209,17 @@ footer input::placeholder {
     to {
       opacity: 1;
     }
-  } */
+  }
 
   .submit-browse__wrapper {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
+  }
+
+  .submit-property,
+  .browse-properties {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .comfort-box__container {
@@ -1276,7 +1279,6 @@ footer input::placeholder {
 
   footer {
     padding: 2rem 1rem;
-    /* min-height: 100vh; */
   }
 
   .footer-heading {
@@ -1300,6 +1302,15 @@ footer input::placeholder {
 }
 
 @media screen and (min-width: 1024px) {
+  .rent:hover,
+  .buy:hover,
+  .sold:hover {
+    background-color: white;
+    color: #318990;
+    font-weight: 600;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+  }
+
   .property-header p:hover {
     background-color: #318990;
     color: white;
